@@ -18,7 +18,7 @@
 
     <fragment
         android:id="@+id/navigation_orders"
-        android:name="com.example.android_proyecto.fragments.OrdersFragment"
+        android:name="com.example.android_proyecto.fragments.FavoriteFragment"
         android:label="@string/title_orders"
-        tools:layout="@layout/fragment_orders" />
+        tools:layout="@layout/fragment_favorite" />
 </navigation>

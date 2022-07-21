@@ -28,8 +28,8 @@ object Constants {
     const val PICK_IMAGE_REQUEST_CODE = 2
 
     // Constant variables for Gender
-    const val MALE: String = "Male"
-    const val FEMALE: String = "Female"
+    const val MALE: String = "Masculino"
+    const val FEMALE: String = "Femenino"
 
     const val DEFAULT_CART_QUANTITY: String = "1"
 

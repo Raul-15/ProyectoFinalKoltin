@@ -90,7 +90,7 @@ class CartListActivity : BaseActivity() {
         // Hide progress dialog.
         hideProgressDialog()
 
-        for (product in mProductsList) {
+/*        for (product in mProductsList) {
             for (cartItem in cartList) {
                 if (product.product_id == cartItem.product_id) {
 
@@ -101,7 +101,7 @@ class CartListActivity : BaseActivity() {
                     }
                 }
             }
-        }
+        }*/
 
         if (cartList.size > 0) {
 

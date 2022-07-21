@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         val username = sharedPreferences.getString(Constants.LOGGED_IN_USERNAME, "")!!
         // Set the result to the tv_main.
         val tv_main = findViewById<TextView>(R.id.tv_main)
-        tv_main.text = "Hello $username."
+        tv_main.text = "Hello $username"
         // END
 
 

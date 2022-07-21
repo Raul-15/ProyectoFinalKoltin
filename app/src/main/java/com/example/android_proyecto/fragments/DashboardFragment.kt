@@ -3,8 +3,6 @@ package com.example.android_proyecto.fragments
 import android.content.Intent
 import android.os.Bundle
 import android.view.*
-import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.android_proyecto.R
 import com.example.android_proyecto.activities.CartListActivity
@@ -53,11 +51,11 @@ class DashboardFragment : BaseFragment() {
                 startActivity(Intent(activity, SettingsActivity::class.java))
                 return true
             }
-            R.id.action_cart -> {
+        /*    R.id.action_cart -> {
 
                 startActivity(Intent(activity, CartListActivity::class.java))
                 return true
-            }
+            }*/
             R.id.log_out_atlternative -> {
 
                 FirebaseAuth.getInstance().signOut()

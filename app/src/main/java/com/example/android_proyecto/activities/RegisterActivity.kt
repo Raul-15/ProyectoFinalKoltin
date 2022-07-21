@@ -107,7 +107,7 @@ class RegisterActivity() : BaseActivity() {
                 false
             }
             else -> {
-                //showErrorSnackBar("Your details are valid.", false)
+           //     showErrorSnackBar("¡Datos llenados incorrectamete, vericalos!", false)
                 true
             }
         }
@@ -140,11 +140,11 @@ class RegisterActivity() : BaseActivity() {
 
                             FirestoreClass().registerUser(this@RegisterActivity, user);
 
-//                            Toast.makeText(
-//                                this@RegisterActivity,
-//                                "You are registered successfully. Yur user id is ${firebaseUser.uid}",
-//                                Toast.LENGTH_SHORT
-//                            ).show()
+                            Toast.makeText(
+                                this@RegisterActivity,
+                                "¡Registro exitoso!",
+                                Toast.LENGTH_SHORT
+                            ).show()
 
                             //  FirebaseAuth.getInstance().signOut()
                             //  finish()
@@ -163,7 +163,7 @@ class RegisterActivity() : BaseActivity() {
                             // If the registering is not successful then show error message.
                             Toast.makeText(
                                 this@RegisterActivity,
-                                task.exception!!.message.toString(),
+                                "Credenciales incorrectas, verifica porfavor",
                                 Toast.LENGTH_SHORT
                             ).show()
                         }

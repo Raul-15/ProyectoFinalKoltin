@@ -111,12 +111,12 @@ class ProductDetailsActivity : BaseActivity(), View.OnClickListener {
             iv_product_detail_image
         )
 
-        tv_product_details_title.text = product.title
+   /*     tv_product_details_title.text = product.title
         tv_product_details_price.text = "$${product.price}"
         tv_product_details_description.text = product.description
-        tv_product_details_stock_quantity.text = product.stock_quantity
+        tv_product_details_stock_quantity.text = product.stock_quantity*/
 
-        if (product.stock_quantity.toInt() == 0) {
+/*        if (product.stock_quantity.toInt() == 0) {
 
             // Hide Progress dialog.
             hideProgressDialog()
@@ -144,7 +144,7 @@ class ProductDetailsActivity : BaseActivity(), View.OnClickListener {
             } else {
                 FirestoreClass().checkIfItemExistInCart(this@ProductDetailsActivity, mProductId)
             }
-        }
+        }*/
 //
 //        if (FirestoreClass().getCurrentUserID() == product.user_id) {
 //            // Hide Progress dialog.
@@ -159,7 +159,7 @@ class ProductDetailsActivity : BaseActivity(), View.OnClickListener {
             when (v.id) {
 
                 R.id.btn_add_to_cart -> {
-                    addToCart()
+                   // addToCart()
                 }
 
                 R.id.btn_go_to_cart -> {
@@ -169,7 +169,7 @@ class ProductDetailsActivity : BaseActivity(), View.OnClickListener {
         }
     }
 
-    private fun addToCart() {
+/*    private fun addToCart() {
 
         val addToCart = Cart(
             FirestoreClass().getCurrentUserID(),
@@ -186,7 +186,7 @@ class ProductDetailsActivity : BaseActivity(), View.OnClickListener {
 
         FirestoreClass().addCartItems(this@ProductDetailsActivity, addToCart)
 
-    }
+    }*/
 
     fun addToCartSuccess() {
         // Hide the progress dialog.

@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.text.TextUtils
 import android.view.View
 import android.widget.Toast
+import com.example.android_proyecto.MainActivity
 import com.example.android_proyecto.R
 import com.example.android_proyecto.firestore.FirestoreClass
 import com.example.android_proyecto.models.User
@@ -84,6 +85,7 @@ class LoginActivity : BaseActivity(), View.OnClickListener {
             val email = et_email.text.toString().trim { it <= ' ' }
             val password = et_password.text.toString().trim { it <= ' ' }
 
+
             // Log-In using FirebaseAuth
             FirebaseAuth.getInstance().signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener { task ->
@@ -94,7 +96,7 @@ class LoginActivity : BaseActivity(), View.OnClickListener {
                     if (task.isSuccessful) {
                         FirestoreClass().getUserDetails(this@LoginActivity)
                         // showErrorSnackBar("You are logged in successfully.", false)
-                        Toast.makeText(this, "Te has logueado exitosamente!,$et_email", Toast.LENGTH_SHORT)
+                        Toast.makeText(this, "Te has logueado exitosamente! $email", Toast.LENGTH_SHORT)
                             .show()
                     } else {
                         showErrorSnackBar(task.exception!!.message.toString(), true)
@@ -112,7 +114,7 @@ class LoginActivity : BaseActivity(), View.OnClickListener {
 
         if (user.profileCompleted == 0) {
             // If the user profile is incomplete then launch the UserProfileActivity.
-            val intent = Intent(this@LoginActivity, UserProfileActivity::class.java)
+            val intent = Intent(this@LoginActivity, DashboardActivity::class.java)
             intent.putExtra(Constants.EXTRA_USER_DETAILS, user)
             startActivity(intent)
         } else {

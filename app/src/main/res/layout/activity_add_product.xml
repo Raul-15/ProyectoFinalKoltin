@@ -71,7 +71,7 @@
             </FrameLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/til_product_title"
+                android:id="@+id/til_comercio_titulo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -84,7 +84,7 @@
                 app:layout_constraintTop_toBottomOf="@id/fl_product_image">
 
                 <EditText
-                    android:id="@+id/et_product_title"
+                    android:id="@+id/et_titulo_comercio"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text"
@@ -94,7 +94,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/til_product_price"
+                android:id="@+id/til_telefono"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -104,10 +104,10 @@
                 android:textColorHint="@color/colorSecondaryText"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/til_product_title">
+                app:layout_constraintTop_toBottomOf="@id/til_comercio_titulo">
 
                 <EditText
-                    android:id="@+id/et_product_price"
+                    android:id="@+id/et_celular_comercio"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text"
@@ -118,7 +118,7 @@
 
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/til_product_description"
+                android:id="@+id/til_paginaweb"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -128,12 +128,12 @@
                 android:textColorHint="@color/colorSecondaryText"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/til_product_price">
+                app:layout_constraintTop_toBottomOf="@id/til_telefono">
 
                 <EditText
-                    android:id="@+id/et_product_description"
+                    android:id="@+id/et_web_comercio"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="61dp"
                     android:inputType="textMultiLine"
                     android:minLines="3"
                     android:padding="@dimen/et_padding"
@@ -142,7 +142,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/til_product_quantity"
+                android:id="@+id/til_descripcion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -152,10 +152,10 @@
                 android:textColorHint="@color/colorSecondaryText"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/til_product_description">
+                app:layout_constraintTop_toBottomOf="@id/til_paginaweb">
 
                 <EditText
-                    android:id="@+id/et_product_quantity"
+                    android:id="@+id/et_descricion_comercio"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="number"
@@ -184,7 +184,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/til_product_quantity" />
+                app:layout_constraintTop_toBottomOf="@id/til_descripcion" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

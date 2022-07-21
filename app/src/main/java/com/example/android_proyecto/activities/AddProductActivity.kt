@@ -153,17 +153,17 @@ class AddProductActivity : BaseActivity(), View.OnClickListener {
                 false
             }
 
-            TextUtils.isEmpty(et_product_title.text.toString().trim { it <= ' ' }) -> {
+            TextUtils.isEmpty(et_titulo_comercio.text.toString().trim { it <= ' ' }) -> {
                 showErrorSnackBar(resources.getString(R.string.err_msg_enter_product_title), true)
                 false
             }
 
-            TextUtils.isEmpty(et_product_price.text.toString().trim { it <= ' ' }) -> {
+            TextUtils.isEmpty(et_celular_comercio.text.toString().trim { it <= ' ' }) -> {
                 showErrorSnackBar(resources.getString(R.string.err_msg_enter_product_price), true)
                 false
             }
 
-            TextUtils.isEmpty(et_product_description.text.toString().trim { it <= ' ' }) -> {
+            TextUtils.isEmpty(et_web_comercio.text.toString().trim { it <= ' ' }) -> {
                 showErrorSnackBar(
                     resources.getString(R.string.err_msg_enter_product_description),
                     true
@@ -171,7 +171,7 @@ class AddProductActivity : BaseActivity(), View.OnClickListener {
                 false
             }
 
-            TextUtils.isEmpty(et_product_quantity.text.toString().trim { it <= ' ' }) -> {
+            TextUtils.isEmpty(et_descricion_comercio.text.toString().trim { it <= ' ' }) -> {
                 showErrorSnackBar(
                     resources.getString(R.string.err_msg_enter_product_quantity),
                     true
@@ -179,6 +179,12 @@ class AddProductActivity : BaseActivity(), View.OnClickListener {
                 false
             }
             else -> {
+                Toast.makeText(
+                    this@AddProductActivity,
+                    resources.getString(R.string.product_uploaded_success_message),
+                    Toast.LENGTH_SHORT
+                ).show()
+
                 true
             }
         }
@@ -217,10 +223,10 @@ class AddProductActivity : BaseActivity(), View.OnClickListener {
         val product = Product(
             FirestoreClass().getCurrentUserID(),
             username,
-            et_product_title.text.toString().trim { it <= ' ' },
-            et_product_price.text.toString().trim { it <= ' ' },
-            et_product_description.text.toString().trim { it <= ' ' },
-            et_product_quantity.text.toString().trim { it <= ' ' },
+            et_titulo_comercio.text.toString().trim { it <= ' ' },
+            et_celular_comercio.text.toString().trim { it <= ' ' },
+            et_web_comercio.text.toString().trim { it <= ' ' },
+            et_descricion_comercio.text.toString().trim { it <= ' ' },
             mProductImageURL
         )
 
