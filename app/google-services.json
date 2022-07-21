@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "456181782282",
+    "project_id": "comercio-app-bc0bc",
+    "storage_bucket": "comercio-app-bc0bc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:456181782282:android:10659eb1f7a4244631ccf3",
+        "android_client_info": {
+          "package_name": "com.example.android_proyecto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "456181782282-0b5v79a5dlsac0emnj14tceelqsm74gn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android_proyecto",
+            "certificate_hash": "31bd9e731134153f1724444352781691a703f892"
+          }
+        },
+        {
+          "client_id": "456181782282-t3ndnj7o2pr0voq8s5of9r49rdgcr89l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNK7KIiF_sVz1O_yn2KTjn61J1HSMWiQc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "456181782282-t3ndnj7o2pr0voq8s5of9r49rdgcr89l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
